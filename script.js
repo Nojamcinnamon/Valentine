@@ -6,7 +6,7 @@ const yesButton = document.querySelector(".btn--yes");
 const noButton = document.querySelector(".btn--no");
 const catImg = document.querySelector(".cat-img");
 
-const MAX_IMAGES = 5;
+const MAX_IMAGES = 9;
 
 let play = true;
 let noCount = 0;
@@ -27,7 +27,7 @@ noButton.addEventListener("click", function () {
 });
 
 function handleYesClick() {
-  titleElement.innerHTML = "Yayyy!! HAPPY VALENTINE'S BABY <3";
+  titleElement.innerHTML = "Yayyy!! Happy Valentine's Day Baby! <3";
   buttonsContainer.classList.add("hidden");
   changeImage("yes");
 }
@@ -44,10 +44,13 @@ function generateMessage(noCount) {
   const messages = [
     "No",
     "Are you sure?",
-    "Pookie please",
+    "Are you really sure",
     "Don't do this to me :(",
     "You're breaking my heart",
-    "I'm gonna cry...",
+    "I'll be very sad",
+    "Final na talaga? Ayaw mo :(",
+    "Sure na :(",
+    "Bb pleaseee...",
   ];
 
   const messageIndex = Math.min(noCount, messages.length - 1);
